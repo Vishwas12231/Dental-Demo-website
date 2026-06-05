@@ -1,0 +1,6 @@
+{
+  "name": "Modern Dental Clinic",
+  "description": "A premium dental clinic website with interactive booking, smart symptoms AI consultant, emergency triage, and dynamic treatments portfolio.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

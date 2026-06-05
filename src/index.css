@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400..950;1,400..950&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  --font-serif: "Playfair Display", serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-brand-primary: #1066e6;
+  --color-brand-secondary: #0080ff;
+  --color-brand-accent: #10b981;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  body {
+    font-family: var(--font-sans);
+    background-color: #fafbfc;
+  }
+
+  ::selection {
+    background-color: rgba(16, 102, 230, 0.15);
+    color: #0f172a;
+  }
+}
+
+/* Custom aesthetic glow background details */
+.glow-blur-blue {
+  background: radial-gradient(circle, rgba(16, 102, 230, 0.08) 0%, transparent 70%);
+}
+
+.glow-blur-emerald {
+  background: radial-gradient(circle, rgba(16, 185, 129, 0.06) 0%, transparent 70%);
+}
+
+/* Glassmorphism custom styling class */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Custom elegant shadows */
+.shadow-premium {
+  box-shadow: 0 10px 40px -10px rgba(15, 23, 42, 0.04), 0 1px 3px rgba(15, 23, 42, 0.02);
+}
+
+.shadow-premium-xl {
+  box-shadow: 0 20px 50px -12px rgba(15, 23, 42, 0.08), 0 1px 4px rgba(15, 23, 42, 0.03);
+}
+
+/* Fine clinical grid backing detail */
+.grid-dots-background {
+  background-image: radial-gradient(#e2e8f0 1.2px, transparent 1.2px);
+  background-size: 24px 24px;
+}
